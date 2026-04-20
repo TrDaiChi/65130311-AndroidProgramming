@@ -29,12 +29,11 @@ public class DanhNhanActivity extends AppCompatActivity {
 
         // 1. Tạo dữ liệu hard-code (5 danh nhân)
         danhNhanList = new ArrayList<>();
-        // Sử dụng icon hệ thống tạm thời cho ảnh
-        danhNhanList.add(new DanhNhan("Võ Nguyên Giáp", "Quảng Bình", android.R.drawable.ic_menu_myplaces));
-        danhNhanList.add(new DanhNhan("Hồ Chí Minh", "Nghệ An", android.R.drawable.ic_menu_myplaces));
-        danhNhanList.add(new DanhNhan("Trần Hưng Đạo", "Nam Định", android.R.drawable.ic_menu_myplaces));
-        danhNhanList.add(new DanhNhan("Nguyễn Trãi", "Hải Dương", android.R.drawable.ic_menu_myplaces));
-        danhNhanList.add(new DanhNhan("Quang Trung", "Bình Định", android.R.drawable.ic_menu_myplaces));
+        danhNhanList.add(new DanhNhan("Võ Nguyên Giáp", "Quảng Bình", R.drawable.img));
+        danhNhanList.add(new DanhNhan("Hồ Chí Minh", "Nghệ An", R.drawable.img_1));
+        danhNhanList.add(new DanhNhan("Trần Hưng Đạo", "Nam Định",R.drawable.img_2));
+        danhNhanList.add(new DanhNhan("Nguyễn Trãi", "Hải Dương", R.drawable.img_3));
+        danhNhanList.add(new DanhNhan("Quang Trung", "Bình Định", R.drawable.img_4));
 
         // 2. Thiết lập RecyclerView
         adapter = new DanhNhanAdapter(danhNhanList);

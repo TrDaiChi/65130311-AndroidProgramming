@@ -10,7 +10,7 @@
         android:id="@+id/imgDanhNhan"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:scaleType="centerCrop"
+        android:scaleType="fitXY"
         android:src="@android:drawable/ic_menu_gallery"
         android:layout_marginEnd="15dp"/>
 
