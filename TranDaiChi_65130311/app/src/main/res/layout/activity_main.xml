@@ -5,21 +5,34 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:gravity="center"
+    android:gravity="center_horizontal"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TRẦN ĐẠI CHÍ"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#E91E63"
+        android:background="#89FF00"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_marginBottom="40dp"/>
 
     <Button
         android:id="@+id/btnChucNang1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tiền"
+        android:text="Đổi Tiền"
         android:layout_marginBottom="10dp"/>
 
     <Button
         android:id="@+id/btnChucNang2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nhạc"
+        android:text="Danh Sách Nhạc"
         android:layout_marginBottom="10dp"/>
 
     <Button
@@ -33,6 +46,6 @@
         android:id="@+id/btnChucNang4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Thông tin cá nhân"/>
+        android:text="Thông Tin Cá Nhân"/>
 
 </LinearLayout>

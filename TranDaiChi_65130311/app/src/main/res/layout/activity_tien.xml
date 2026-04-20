@@ -15,7 +15,7 @@
         android:text="CHUYỂN ĐỔI TIỀN TỆ"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="#1976D2"
+        android:textColor="#E91E63"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="30dp"/>
 

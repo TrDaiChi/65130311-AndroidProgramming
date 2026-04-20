@@ -20,12 +20,9 @@ public class NhacActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nhac);
-
-        // Ánh xạ View
         lvBaiHat = findViewById(R.id.lvBaiHat);
         btnBack = findViewById(R.id.btnBackNhac);
 
-        // 1. Tạo dữ liệu 10 bài hát
         dsBaiHat = new ArrayList<>();
         dsBaiHat.add("Sơn Tùng M-TP - Đừng làm trái tim anh đau");
         dsBaiHat.add("HIEUTHUHAI - Ngủ một mình");
@@ -38,7 +35,6 @@ public class NhacActivity extends AppCompatActivity {
         dsBaiHat.add("Phan Mạnh Quỳnh - Có chàng trai viết lên cây");
         dsBaiHat.add("Trần Đại Chí - Bài hát đặc biệt");
 
-        // 2. Thiết lập Adapter (Sử dụng layout item_nhac.xml đã tạo)
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
                 this,
                 R.layout.item_nhac,
@@ -48,7 +44,6 @@ public class NhacActivity extends AppCompatActivity {
 
         lvBaiHat.setAdapter(adapter);
 
-        // 3. Nút quay lại
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

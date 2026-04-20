@@ -3,7 +3,7 @@ package thigk2.trandaichi_65130311;
 public class DanhNhan {
     private String ten;
     private String queQuan;
-    private int hinhAnh; // ID của resource ảnh
+    private int hinhAnh;
 
     public DanhNhan(String ten, String queQuan, int hinhAnh) {
         this.ten = ten;

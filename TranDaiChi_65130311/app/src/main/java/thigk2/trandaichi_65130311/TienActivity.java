@@ -21,19 +21,13 @@ public class TienActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tien);
-
-        // Ánh xạ View
         findViews();
-
-        // Xử lý sự kiện đổi tiền
         btnDoiTien.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 doiTien();
             }
         });
-
-        // Nút quay lại
         btnBackTien.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,8 +45,6 @@ public class TienActivity extends AppCompatActivity {
 
     private void doiTien() {
         String input = edtTien.getText().toString().trim();
-
-        // 1. Kiểm tra rỗng
         if (input.isEmpty()) {
             Toast.makeText(this, "Vui lòng nhập số tiền!", Toast.LENGTH_SHORT).show();
             edtTien.setError("Không được để trống");

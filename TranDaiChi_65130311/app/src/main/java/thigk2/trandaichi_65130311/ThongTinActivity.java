@@ -18,19 +18,13 @@ public class ThongTinActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thong_tin);
-
-        // Ánh xạ View
         imgAvatar = findViewById(R.id.imgAvatar);
         tvHoTen = findViewById(R.id.tvHoTen);
         tvMSV = findViewById(R.id.tvMSV);
         tvLop = findViewById(R.id.tvLop);
         tvDiaChi = findViewById(R.id.tvDiaChi);
         btnBack = findViewById(R.id.btnBackThongTin);
-
-        // Hiển thị thông tin (Dữ liệu cứng)
         hienThiThongTin();
-
-        // Xử lý nút quay lại
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,8 +38,6 @@ public class ThongTinActivity extends AppCompatActivity {
         tvMSV.setText("Mã sinh viên: 65130311");
         tvLop.setText("Lớp: 65.CNTT-2");
         tvDiaChi.setText("Địa chỉ: Nha Trang, Khánh Hòa");
-        
-        // Ảnh đại diện dùng icon mặc định hệ thống
         imgAvatar.setImageResource(R.drawable.tdc);
     }
 }

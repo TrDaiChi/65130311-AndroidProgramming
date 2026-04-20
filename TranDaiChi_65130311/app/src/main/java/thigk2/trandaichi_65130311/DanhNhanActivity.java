@@ -23,11 +23,9 @@ public class DanhNhanActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_danh_nhan);
 
-        // Ánh xạ
         rvDanhNhan = findViewById(R.id.rvDanhNhan);
         btnBack = findViewById(R.id.btnBackDanhNhan);
 
-        // 1. Tạo dữ liệu hard-code (5 danh nhân)
         danhNhanList = new ArrayList<>();
         danhNhanList.add(new DanhNhan("Võ Nguyên Giáp", "Quảng Bình", R.drawable.img));
         danhNhanList.add(new DanhNhan("Hồ Chí Minh", "Nghệ An", R.drawable.img_1));
@@ -35,12 +33,10 @@ public class DanhNhanActivity extends AppCompatActivity {
         danhNhanList.add(new DanhNhan("Nguyễn Trãi", "Hải Dương", R.drawable.img_3));
         danhNhanList.add(new DanhNhan("Quang Trung", "Bình Định", R.drawable.img_4));
 
-        // 2. Thiết lập RecyclerView
         adapter = new DanhNhanAdapter(danhNhanList);
         rvDanhNhan.setLayoutManager(new LinearLayoutManager(this));
         rvDanhNhan.setAdapter(adapter);
 
-        // 3. Nút quay lại
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
